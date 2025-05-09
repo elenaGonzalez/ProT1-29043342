@@ -21,7 +21,7 @@ header {
 }
 
 .contenido{
-    margin: 5%;
+    margin: 3%;
     text-align: center;
     border: 2px solid green;
     border-radius: 2em;
@@ -31,14 +31,50 @@ section {
     padding: 20px;
 }
 
+.img {
+    border-style: outset;
+    border-color: #69bd45;
+    border: solid 1rem;
+}
+
+.img:hover {
+    border-color: #69bd45;
+    content: "Playa";
+    opacity: 0.80;
+}
+
 footer {
     background-color: #69bd45; 
     color: #fff;
     padding: 20px 0; 
 }
-    .footer-content {
-    margin: 0 auto; 
-    text-align: center;
+
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+}
+
+.footer-container ul{
+    display: flex;
+    align-items: center;
+    gap: 55px;
+    margin: 0;
+    padding: 0;
+}
+
+.redes li{
+    display: block;
+    list-style: none;
+}
+
+.redes li:hover{
+    background-color: #fbfcfb;
+}
+
+.importante{
+    font-size: large;
 }
 
 nav {
@@ -51,6 +87,7 @@ nav {
 
 nav .menu ul {
     display: flex;
+    align-items: center;
     gap: 55px;
     margin: 0;
     padding: 0;
@@ -69,4 +106,10 @@ nav li:hover {
     background-color: rgb(208, 240, 93);
 }
 
+[id="logo"]::before {
+    content: url('map_navigation_icon.png');
+}
+
+
+    
    
